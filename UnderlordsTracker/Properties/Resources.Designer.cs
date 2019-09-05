@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UnderlordsTracker.Properties {
+namespace UnderlordsTester.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace UnderlordsTracker.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UnderlordsTracker.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UnderlordsTester.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,18 +61,22 @@ namespace UnderlordsTracker.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to F3 0F11 8F 94060000   - movss [rdi+00000694],xmm1			- Increment server timer
-        ///52                    - push rdx							- Store rdx
-        ///48 8B 15 7D000000     - mov rdx,[Data]						- Move player index
-        ///48 83 FA 00           - cmp rdx,00							- if player index isn&apos;t 0
-        ///74 68                 - je Exit
-        ///90                    - nop 
-        ///90                    - nop 
-        ///90                    - nop 
-        ///90                    - nop 
-        ///55                    - push rbp
-        ///41 50                 - push r8
-        ///41 51                 - push  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to F3 0F11 8F 94060000		- movss [rdi+00000694],xmm1			- Increment server timer
+        ///52						- push rdx							- Store rdx
+        ///48 8B 15 7D000000		- mov rdx,[Data]					- Move player index
+        ///48 83 FA 00				- cmp rdx,00						- if player index isn&apos;t 0
+        ///74 68					- je Exit
+        ///90						- nop 
+        ///90						- nop 
+        ///90						- nop 
+        ///90						- nop 
+        ///55						- push rbp
+        ///41 50					- push r8
+        ///41 51					- push r9
+        ///41 52					- push r10
+        ///41 53					- push r11
+        ///48 B8 0A00000000000000	- mov rax,000000000000000A 	- Needs to be 0xA?
+        ///48 BD 06000000 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AddHeroInjection {
             get {

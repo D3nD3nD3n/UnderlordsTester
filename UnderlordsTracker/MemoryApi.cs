@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace UnderlordsTracker
+namespace UnderlordsTester
 {
     static class MemoryApi
     {

@@ -3,9 +3,9 @@ using System.IO;
 using System.Reflection;
 using System.Diagnostics;
 using System.Collections.Generic;
-using static UnderlordsTracker.Structs;
+using static UnderlordsTester.Structs;
 
-namespace UnderlordsTracker
+namespace UnderlordsTester
 {
     class Addresses
     {

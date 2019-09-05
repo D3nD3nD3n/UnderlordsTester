@@ -1,4 +1,4 @@
-﻿namespace UnderlordsTracker
+﻿namespace UnderlordsTester
 {
     partial class Form1
     {

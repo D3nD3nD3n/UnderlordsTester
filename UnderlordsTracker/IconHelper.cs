@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnderlordsTracker
+namespace UnderlordsTester
 {
     static class IconHelper
     {
@@ -29,7 +29,7 @@ namespace UnderlordsTracker
             }
             id %= 500;
             Point p = new Point(id % 10, id / 10);
-            return CropImage(UnderlordsTracker.Properties.Resources.Icons, new Rectangle((p.X * 32) + 320 * column, p.Y * 32, 32, 32));
+            return CropImage(UnderlordsTester.Properties.Resources.Icons, new Rectangle((p.X * 32) + 320 * column, p.Y * 32, 32, 32));
         }
         public static Image GetMiniImageByID(int id)
         {
@@ -45,7 +45,7 @@ namespace UnderlordsTracker
             }
             id %= 500;
             Point p = new Point(id % 10, id / 10);
-            return CropImage(UnderlordsTracker.Properties.Resources.IconsMini, new Rectangle((p.X * 16) + 160 * column, p.Y * 16, 16, 16));
+            return CropImage(UnderlordsTester.Properties.Resources.IconsMini, new Rectangle((p.X * 16) + 160 * column, p.Y * 16, 16, 16));
         }
         public static Image CombineImagePair(Image main, Image sub)
         {

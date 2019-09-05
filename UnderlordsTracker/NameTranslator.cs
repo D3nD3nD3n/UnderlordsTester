@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 
-namespace UnderlordsTracker
+namespace UnderlordsTester
 {
     class NameTranslator
     {
@@ -20,71 +21,108 @@ namespace UnderlordsTracker
         }
         private void FillDictionaries()
         {
-            if (!File.Exists(@"Translation.txt"))
+            if (!File.Exists(@"TextFiles\\Translation.txt"))
             {
-                File.WriteAllText("Translation.txt", Properties.Resources.Translation);
+                File.WriteAllText("TextFiles\\Translation.txt", Properties.Resources.Translation);
             }
-            using (StreamReader sr = new StreamReader(@"Translation.txt"))
+            if (File.Exists(@"TextFiles\\Translation.txt"))
             {
-                string s;
-                char tab = '\u0009';
-                while ((s = sr.ReadLine()) != null)
+                using (StreamReader sr = new StreamReader(@"TextFiles\\Translation.txt"))
                 {
-
-                    string clean = s.Replace(tab.ToString(), "");
-                    if (clean.Length > 0)
+                    readTranslation(sr);
+                }
+            }
+            else
+            {
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                using (Stream stream = assembly.GetManifestResourceStream("UnderlordsTracker.TextFiles.Translation.txt"))
+                {
+                    using (StreamReader sr = new StreamReader(stream))
                     {
-                        string[] filter = { "\"\"" };
-                        string[] split = clean.Split(filter, StringSplitOptions.None);
-                        if (split.Length == 2)
-                        {
-                            split[0] = split[0].TrimStart('\"');
-                            split[1] = split[1].Trim('\"');
-
-                            
-                            if (split[0].Contains("dac_unit_") || split[0].Contains("dac_hero_name") || split[0].Contains("dac_name"))
-                            {
-                                if (!split[0].Substring(split[0].Length - 4).Equals("lore") && !split[0].Substring(split[0].Length - 4).Equals("desc"))
-                                {
-                                    InternalToTranslatedDict.Add(split[0], split[1] + "h");
-                                }
-                            }
-                                else if(split[0].Contains("dac_item"))
-                            {
-                                if (!split[0].Substring(split[0].Length - 4).Equals("lore") && !split[0].Substring(split[0].Length - 4).Equals("desc"))
-                                {
-                                    InternalToTranslatedDict.Add(split[0], split[1] + "i");
-                                }
-                            }
-                            
-                            else if (split[0].Contains("DAC_Synergy_"))
-                            {
-                                if(!split[0].Contains("DAC_Synergy_Desc") && !split[0].Contains("dac_synergy_popup"))
-                                DACtoULDict.Add(split[0].Substring(12).ToLower(), split[1]);
-                            }
-                            
-                        }
+                        readTranslation(sr);
                     }
                 }
             }
 
-            if (!File.Exists(@"IDtoName.txt"))
+            if (!File.Exists(@"TextFiles\\IDtoName.txt"))
             {
-                File.WriteAllText("IDtoName.txt", Properties.Resources.IDtoName);
+                File.WriteAllText("TextFiles\\IDtoName.txt", Properties.Resources.IDtoName);
             }
-            using (StreamReader sr = new StreamReader(@"IDtoName.txt"))
+            if (File.Exists(@"TextFiles\\IDtoName.txt"))
             {
-                string s;
-                while ((s = sr.ReadLine()) != null)
+                using (StreamReader sr = new StreamReader(@"TextFiles\\IDtoName.txt"))
                 {
-                    string[] split = s.Split(',');
-                    IDToInternalDict.Add(int.Parse(split[0]), split[1]);
+                    string s;
+                    while ((s = sr.ReadLine()) != null)
+                    {
+                        string[] split = s.Split(',');
+                        IDToInternalDict.Add(int.Parse(split[0]), split[1]);
+                    }
+                }
+            }
+            else
+            {
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                using (Stream stream = assembly.GetManifestResourceStream("UnderlordsTracker.TextFiles.IDtoName.txt"))
+                {
+                    using (StreamReader sr = new StreamReader(stream))
+                    {
+                        string s;
+                        while ((s = sr.ReadLine()) != null)
+                        {
+                            string[] split = s.Split(',');
+                            IDToInternalDict.Add(int.Parse(split[0]), split[1]);
+                        }
+                    }
                 }
             }
 
             foreach(KeyValuePair<int, string> kv in IDToInternalDict)
             {
                 TranslatedToIDDict.Add(GetTranslatedName(kv.Key), kv.Key);
+            }
+        }
+        public void readTranslation(StreamReader sr)
+        {
+            string s;
+            char tab = '\u0009';
+            while ((s = sr.ReadLine()) != null)
+            {
+
+                string clean = s.Replace(tab.ToString(), "");
+                if (clean.Length > 0)
+                {
+                    string[] filter = { "\"\"" };
+                    string[] split = clean.Split(filter, StringSplitOptions.None);
+                    if (split.Length == 2)
+                    {
+                        split[0] = split[0].TrimStart('\"');
+                        split[1] = split[1].Trim('\"');
+
+
+                        if (split[0].Contains("dac_unit_") || split[0].Contains("dac_hero_name") || split[0].Contains("dac_name"))
+                        {
+                            if (!split[0].Substring(split[0].Length - 4).Equals("lore") && !split[0].Substring(split[0].Length - 4).Equals("desc"))
+                            {
+                                InternalToTranslatedDict.Add(split[0], split[1] + "h");
+                            }
+                        }
+                        else if (split[0].Contains("dac_item"))
+                        {
+                            if (!split[0].Substring(split[0].Length - 4).Equals("lore") && !split[0].Substring(split[0].Length - 4).Equals("desc"))
+                            {
+                                InternalToTranslatedDict.Add(split[0], split[1] + "i");
+                            }
+                        }
+
+                        else if (split[0].Contains("DAC_Synergy_"))
+                        {
+                            if (!split[0].Contains("DAC_Synergy_Desc") && !split[0].Contains("dac_synergy_popup"))
+                                DACtoULDict.Add(split[0].Substring(12).ToLower(), split[1]);
+                        }
+
+                    }
+                }
             }
         }
 

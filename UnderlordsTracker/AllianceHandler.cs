@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnderlordsTracker
+namespace UnderlordsTester
 {
     class AllianceHandler
     {
@@ -27,17 +28,36 @@ namespace UnderlordsTracker
         private void FillHIDDict()
         {
 
-            if (!File.Exists(@"HeroAlliances.txt"))
+            if (!File.Exists(@"TextFiles\\HeroAlliances.txt"))
             {
-                File.WriteAllText("HeroAlliances.txt", Properties.Resources.HeroAlliances);
+                File.WriteAllText("TextFiles\\HeroAlliances.txt", Properties.Resources.HeroAlliances);
             }
-            using (StreamReader sr = new StreamReader(@"HeroAlliances.txt"))
+            if (File.Exists(@"TextFiles\\HeroAlliances.txt"))
             {
-                string s;
-                while ((s = sr.ReadLine()) != null)
+                using (StreamReader sr = new StreamReader(@"TextFiles\\HeroAlliances.txt"))
                 {
-                    string[] split = s.Split(',');
-                    HIDtoAllianceDict.Add(int.Parse(split[0]), split[1]);
+                    string s;
+                    while ((s = sr.ReadLine()) != null)
+                    {
+                        string[] split = s.Split(',');
+                        HIDtoAllianceDict.Add(int.Parse(split[0]), split[1]);
+                    }
+                }
+            }
+            else
+            {
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                using (Stream stream = assembly.GetManifestResourceStream("UnderlordsTracker.TextFiles.HeroAlliances.txt"))
+                {
+                    using (StreamReader sr = new StreamReader(stream))
+                    {
+                        string s;
+                        while ((s = sr.ReadLine()) != null)
+                        {
+                            string[] split = s.Split(',');
+                            HIDtoAllianceDict.Add(int.Parse(split[0]), split[1]);
+                        }
+                    }
                 }
             }
         }

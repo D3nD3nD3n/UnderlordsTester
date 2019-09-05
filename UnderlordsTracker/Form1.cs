@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static UnderlordsTracker.Structs;
+using static UnderlordsTester.Structs;
 
-namespace UnderlordsTracker
+namespace UnderlordsTester
 {
     public partial class Form1 : Form
     {

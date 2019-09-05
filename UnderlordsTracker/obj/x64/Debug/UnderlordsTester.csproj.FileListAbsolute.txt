@@ -1,14 +1,7 @@
 C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\bin\x64\Debug\TextFiles\AddHeroInjection.txt
-C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\bin\x64\Debug\UnderlordsTracker.exe.config
-C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\bin\x64\Debug\UnderlordsTracker.exe
-C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\bin\x64\Debug\UnderlordsTracker.pdb
 C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTester.csprojAssemblyReference.cache
-C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.Form1.resources
-C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.Properties.Resources.resources
 C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTester.csproj.GenerateResource.cache
 C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTester.csproj.CoreCompileInputs.cache
-C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.exe
-C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.pdb
 C:\Users\Den\Source\Repos\UnderlordsTester - Copy\UnderlordsTracker\bin\x64\Debug\TextFiles\AddHeroInjection.txt
 C:\Users\Den\Source\Repos\UnderlordsTester - Copy\UnderlordsTracker\bin\x64\Debug\UnderlordsTracker.exe.config
 C:\Users\Den\Source\Repos\UnderlordsTester - Copy\UnderlordsTracker\bin\x64\Debug\UnderlordsTracker.exe
@@ -20,3 +13,10 @@ C:\Users\Den\Source\Repos\UnderlordsTester - Copy\UnderlordsTracker\obj\x64\Debu
 C:\Users\Den\Source\Repos\UnderlordsTester - Copy\UnderlordsTracker\obj\x64\Debug\UnderlordsTester.csproj.CoreCompileInputs.cache
 C:\Users\Den\Source\Repos\UnderlordsTester - Copy\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.exe
 C:\Users\Den\Source\Repos\UnderlordsTester - Copy\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.pdb
+C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\bin\x64\Debug\UnderlordsTester.exe.config
+C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\bin\x64\Debug\UnderlordsTester.exe
+C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\bin\x64\Debug\UnderlordsTester.pdb
+C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTester.Form1.resources
+C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTester.Properties.Resources.resources
+C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTester.exe
+C:\Users\Den\Source\Repos\UnderlordsTester\UnderlordsTracker\obj\x64\Debug\UnderlordsTester.pdb
