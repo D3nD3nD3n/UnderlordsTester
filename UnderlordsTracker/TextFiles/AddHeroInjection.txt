@@ -1,0 +1,30 @@
+﻿F3 0F11 8F 94060000		- movss [rdi+00000694],xmm1			- Increment server timer
+52						- push rdx							- Store rdx
+48 8B 15 7D000000		- mov rdx,[Data]					- Move player index
+48 83 FA 00				- cmp rdx,00						- if player index isn't 0
+74 68					- je Exit
+90						- nop 
+90						- nop 
+90						- nop 
+90						- nop 
+55						- push rbp
+41 50					- push r8
+41 51					- push r9
+41 52					- push r10
+41 53					- push r11
+48 B8 0A00000000000000	- mov rax,000000000000000A 	- Needs to be 0xA?
+48 BD 0600000000000000	- mov rbp,0000000000000006 	- 6 for player, 8 for bot from testing / doesn't matter
+49 B8 0100000000000000	- mov r8,0000000000000001 		- Hero id
+49 B9 0100000000000000	- mov r9,0000000000000001 		- Hero level
+49 BA 0100000000000000	- mov r10,0000000000000001 	- Unknown
+49 BB 0200000000000000	- mov r11,0000000000000002 	- Unknown
+E8 %herofunc				- call server.dll+F6AA0				- Create hero func
+41 5B					- pop r11
+41 5A					- pop r10
+41 59					- pop r9
+41 58					- pop r8
+5D						- pop rbp
+48 BA 0000000000000000	- mov rdx,0000000000000000 	- Set player index to 0
+48 89 15 0F000000		- mov [Data],rdx 			- Set player index to 0
+5A						- pop rdx
+E9 %returntick			- jmp server.dll+E48A8				- Return to normal loop

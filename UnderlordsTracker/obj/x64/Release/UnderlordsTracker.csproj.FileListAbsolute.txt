@@ -1,0 +1,10 @@
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Release\UnderlordsTracker.Form1.resources
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Release\UnderlordsTracker.Properties.Resources.resources
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Release\UnderlordsTracker.csproj.GenerateResource.cache
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Release\UnderlordsTracker.csproj.CoreCompileInputs.cache
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\x64\Release\TextFiles\AddHeroInjection.txt
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\x64\Release\UnderlordsTracker.exe.config
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\x64\Release\UnderlordsTracker.exe
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\x64\Release\UnderlordsTracker.pdb
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Release\UnderlordsTracker.exe
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Release\UnderlordsTracker.pdb

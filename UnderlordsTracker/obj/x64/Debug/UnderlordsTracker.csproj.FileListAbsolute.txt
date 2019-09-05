@@ -1,0 +1,11 @@
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\x64\Debug\UnderlordsTracker.exe.config
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\x64\Debug\UnderlordsTracker.exe
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\x64\Debug\UnderlordsTracker.pdb
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.Form1.resources
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.Properties.Resources.resources
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.csproj.GenerateResource.cache
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.csproj.CoreCompileInputs.cache
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.exe
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.pdb
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\x64\Debug\UnderlordsTracker.csprojAssemblyReference.cache
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\x64\Debug\TextFiles\AddHeroInjection.txt

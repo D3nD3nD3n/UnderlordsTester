@@ -1,0 +1,10 @@
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\Debug\UnderlordsTracker.exe.config
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\Debug\UnderlordsTracker.exe
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\bin\Debug\UnderlordsTracker.pdb
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\Debug\UnderlordsTracker.csprojAssemblyReference.cache
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\Debug\UnderlordsTracker.Form1.resources
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\Debug\UnderlordsTracker.Properties.Resources.resources
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\Debug\UnderlordsTracker.csproj.GenerateResource.cache
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\Debug\UnderlordsTracker.csproj.CoreCompileInputs.cache
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\Debug\UnderlordsTracker.exe
+C:\Users\Den\Source\Repos\UnderlordsTracker\UnderlordsTracker\obj\Debug\UnderlordsTracker.pdb

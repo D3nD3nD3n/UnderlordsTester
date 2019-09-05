@@ -1,0 +1,90 @@
+﻿1,brawny warrior
+2,savage druid
+3,ogre mage
+4,savage warrior
+5,undead hunter
+6,goblin assassin
+7,goblin inventor
+8,troll shaman
+9,troll knight
+10,goblin inventor
+11,elf demonhunter
+12,primordial warrior
+13,human mage
+14,brawny hunter
+15,brawny warrior
+16,goblin inventor
+17,demon assassin
+18,elf dragon mage
+19,troll warlock
+20,naga warrior
+21,demon knight
+22,elf druid
+23,primordial assassin
+24,elf knight
+25,elf druid
+26,human savage hunter
+27,savage warlock
+28,human knight
+29,primordial mage
+30,elf hunter
+31,elf assassin
+32,undead knight
+33,savage assassin
+34,naga assassin
+35,goblin dwarf hunter
+36,demon demonhunter
+37,dragon assassin
+38,demon warlock
+39,human mage
+40,demon warrior
+41,human warrior
+42,troll warrior
+43,human mage
+44,undead warlock
+45,elf assassin
+46,goblin warlock
+47,brawny warlock
+48,naga hunter
+49,human dragon knight
+50,savage druid
+51,dwarf inventor
+52,undead mage
+53,naga warrior
+54,primordial shaman
+55,goblin inventor
+56,savage
+58,druid
+59,savage druid
+60,savage hunter
+61,
+62,
+63,
+64,
+65,megawarrior
+66,megawarrior
+67,megaassassin
+68,megaassassin
+69,megabloodbound
+70,megabloodbound
+71,megaelusive
+72,megaelusive
+73,megawarlock
+74,megawarlock
+75,megascaled
+76,megatroll
+77,megatroll
+78,megatroll
+79,megademon
+80,
+81,undead warrior
+82,ogre warlock
+83,human dwarf assassin
+84,primordial shaman
+86,elf hunter
+87,primordial
+91,
+92,
+93,
+94,
+95,
